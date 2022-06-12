@@ -4,11 +4,11 @@ import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/types/Product';
 
 @Component({
-  selector: 'app-layouts-detail',
-  templateUrl: './layouts-detail.component.html',
-  styleUrls: ['./layouts-detail.component.css']
+  selector: 'app-admin-detail',
+  templateUrl: './admin-detail.component.html',
+  styleUrls: ['./admin-detail.component.css']
 })
-export class LayoutsDetailComponent implements OnInit {
+export class AdminDetailComponent implements OnInit {
   id : string ;
   product : Product;
   constructor(

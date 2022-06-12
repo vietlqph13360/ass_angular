@@ -336,64 +336,7 @@
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
-                    <button class="btn btn-primary  mb-10">Thêm mới sản phẩm</button>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Price</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Sản phẩm số 1</td>
-                                <td>100000</td>
-                                <td class="mr-2 ml-2">
-                                    <a routerLink="">
-                                        <button class="btn btn-info ">Detail</button>
-                                    </a>
-                                    <button class="btn btn-danger">Delete</button>
-                                    <!-- <a [routerLink]="['/admin', 'product', product.id]"><button>Detail</button></a> -->
-                                    <a routerLink="">
-                                        <button class="btn btn-warning">Edit</button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Sản phẩm số 2</td>
-                                <td>100000</td>
-                                <td class="mr-2 ml-2">
-                                    <a routerLink="">
-                                        <button class="btn btn-info ">Detail</button>
-                                    </a>
-                                    <button class="btn btn-danger">Delete</button>
-                                    <!-- <a [routerLink]="['/admin', 'product', product.id]"><button>Detail</button></a> -->
-                                    <a routerLink="">
-                                        <button class="btn btn-warning">Edit</button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Sản phẩm số 3</td>
-                                <td>100000</td>
-                                <td class="mr-2 ml-2">
-                                    <a routerLink="">
-                                        <button class="btn btn-info ">Detail</button>
-                                    </a>
-                                    <button class="btn btn-danger">Delete</button>
-                                    <!-- <a [routerLink]="['/admin', 'product', product.id]"><button>Detail</button></a> -->
-                                    <a routerLink="">
-                                        <button class="btn btn-warning">Edit</button>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <router-outlet></router-outlet>
 
 
                 </div>

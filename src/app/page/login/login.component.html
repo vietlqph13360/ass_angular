@@ -1,15 +1,18 @@
-<div class="container">
-    <form>
+<div class="container mt-20">
+    <h3>Trang đăng nhập</h3>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <!-- Email input -->
         <div class="form-outline mb-4">
-            <input type="email" id="form2Example1" class="form-control" />
             <label class="form-label" for="form2Example1">Email address</label>
+            <input type="email" id="form2Example1" formControlName="email" class="form-control" />
+
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
-            <input type="password" id="form2Example2" class="form-control" />
             <label class="form-label" for="form2Example2">Password</label>
+            <input type="password" id="form2Example2" formControlName="password" class="form-control" />
+
         </div>
 
         <!-- 2 column grid layout for inline styling -->
@@ -29,11 +32,11 @@
         </div>
 
         <!-- Submit button -->
-        <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+        <button class="btn btn-primary btn-block mb-4">Sign in</button>
 
         <!-- Register buttons -->
         <div class="text-center">
-            <p>Not a member? <a href="register">Register</a></p>
+            <p>Not a member? <a routerLink="/register">Register</a></p>
             <p>or sign up with:</p>
             <button type="button" class="btn btn-link btn-floating mx-1">
       <i class="fab fa-facebook-f"></i>

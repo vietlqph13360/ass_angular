@@ -1,0 +1,21 @@
+<div class="container">
+    <a routerLink="/admin/categories/creat"><button class="btn btn-primary mb-10">Tạo mới</button></a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of Categories; let i = index">
+                <td>{{i}}</td>
+                <td>{{category.name}}</td>
+                <td><button class="btn btn-danger" (click)="onRemove(category._id)">Xóa</button></td>
+                <td><a routerLink="/admin/categories/edit/{{category._id}}"><button class="btn btn-info">Sửa</button></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

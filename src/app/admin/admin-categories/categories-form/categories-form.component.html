@@ -1,0 +1,14 @@
+<div class="container">
+    <form [formGroup]="CategoryForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="">
+              Name
+          </label>
+            <!-- Định nghĩa thuộc tính để lắng nghe input -->
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <button class="btn btn-success" [disabled]="!CategoryForm.valid">
+          Thêm
+      </button>
+    </form>
+</div>

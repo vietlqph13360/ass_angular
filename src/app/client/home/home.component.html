@@ -3,8 +3,8 @@
     <div class="max-w-[1440px] mx-auto">
         <div class="my-[20px]">
             <h2 class="font-semibold text-2xl uppercase my-[30px] text-center">Tất cả Sản phẩm</h2>
-            <div class="grid grid-cols-5 gap-8">
-                <div class="border p-3">
+            <div class="grid grid-cols-4 gap-8">
+                <!-- <div class="border p-3">
                     <a routerLink="/">
                         <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
                     </a>
@@ -12,88 +12,19 @@
                         <a routerLink="/detail" class="font-semibold text-[18px] ">sản phẩm số 1</a>
                     </h3>
                     <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/detail">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
+                </div> -->
+                <div class="border p-3" *ngFor="let product of products">
                     <a routerLink="/">
                         <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
                     </a>
                     <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
+                        <a routerLink="/detail/{{product._id}}" class="font-semibold text-[18px] ">{{product.name}}</a>
                     </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
+                    <p class="text-[red] font-semibold text-[17px]">{{product.price}}</p>
                 </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
-                <div class="border p-3">
-                    <a routerLink="/">
-                        <img src="https://picsum.photos/200/300" class="w-[250px] h-[250px]">
-                    </a>
-                    <h3 class="my-3">
-                        <a routerLink="/" class="font-semibold text-[18px] ">sản phẩm số 1</a>
-                    </h3>
-                    <p class="text-[red] font-semibold text-[17px]">100.000 đ</p>
-                </div>
+
+
+
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@
         <div class="w-[1080px] h-auto mx-auto">
             <div class="w-[1080px] py-[10px] flex border-b-2 border-[#f2f2f2]">
                 <div class="text-yellow-500">
-                    <a href="/" class="text-yellow-500 font-semibold">Trang chủ</a>
+                    <a routerLink="/" class="text-yellow-500 font-semibold">Trang chủ</a>
                 </div>
                 <div class="mx-2 text-[#5d5f6c]">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -20,7 +20,7 @@
             <div class="w-[1080px] h-auto flex justify-between mt-[20px]">
                 <div class="w-[500px] h-[500px] mr-[20px] border">
                     <div>
-                        <img src="https://picsum.photos/200/300" alt="" class="w-[500px] h-[500px]">
+                        <img [src]="product.image" alt="" class="w-[500px] h-[500px]">
                     </div>
                 </div>
                 <div class="w-[460px]">
@@ -31,6 +31,10 @@
                         <div class="font-medium text-[16px] break-words"></div>
                     </div>
                     <div class="text-[#fe4c50] font-semibold text-2xl mb-5">
+                        <h4> {{product.name}}</h4>
+                    </div>
+                    <div class="text-[#fe4c50] font-semibold text-2xl mb-5">
+                        <h4> {{product.price}}</h4>
                     </div>
                     <div class="flex">
                         <div class="text-[#1e1e27] mt-1">
@@ -51,7 +55,7 @@
                 thông tin chi tiết sản phẩm
             </div>
             <div class="w-[1080px] my-[20px]">
-
+                {{product.description}}
             </div>
         </div>
     </div>
